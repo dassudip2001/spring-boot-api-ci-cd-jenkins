@@ -20,6 +20,6 @@ jobs:
            echo "VERSION=$VERSION" >> GITHUB_ENV
            echo "Version: $VERSION"
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dassudip2001/demoaoo:$(date +%s)
+      run: docker build . --file Dockerfile --tag dassudip2001/demoaoo:$VERSION
     - name: List of docker images
       run: docker images
